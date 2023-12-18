@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Resume Maker</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Basic Resume Maker</h1>
+    </header>
+    <main>
+        <div id="form">
+            <form id="resume-form">
+                <div class="personal__details">
+                    <h2>Enter your personal information</h2>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone"><br>
+
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address"><br>
+                </div>
+
+                <div class="other__details">
+                    <h2 class="other__info">Enter your other information</h2>
+                    <label for="summary">Summary:</label>
+                    <textarea id="summary" name="summary" rows="8"></textarea><br>
+
+                    <label for="experience">Experience:</label>
+                    <textarea id="experience" name="experience" rows="8"></textarea><br>
+
+                    <label for="education">Education:</label>
+                    <textarea id="education" name="education" rows="8"></textarea><br>
+
+                    <label for="image">Upload Photo:</label>
+                    <input type="file" id="image" name="image"><br>
+                </div>
+            </form>
+            <button type="button" id="generate">Generate Resume</button>
+        </div>
+    </main>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
